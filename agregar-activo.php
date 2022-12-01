@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require "includes/funciones.php";
 $auth = autenticado();
 
@@ -128,3 +129,7 @@ include 'includes/header.php';
 
 <?php
 include 'includes/footer.php';
+
+
+ob_end_flush();
+?>

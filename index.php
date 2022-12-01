@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require "includes/funciones.php";
 $auth = autenticado();
 if(!$auth){
@@ -328,3 +329,6 @@ $(document).ready(function() {
 
 });
 </script>
+<?php
+ob_end_flush();
+?>

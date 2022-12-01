@@ -1,10 +1,4 @@
 <?php
-require "includes/funciones.php";
-$auth = autenticado();
-
-if(!$auth){
-    header("Location:login.php");
-}
 
 require 'includes/config/database.php';
 

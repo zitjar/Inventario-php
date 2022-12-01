@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require "includes/funciones.php";
 $auth = autenticado();
 $rol = $_SESSION['rol'];
@@ -176,3 +177,7 @@ exampleModal.addEventListener('show.bs.modal', event => {
     modalBodyInput.value = recipient
 })
 </script>
+
+<?php
+ob_end_flush();
+?>

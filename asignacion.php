@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require "includes/funciones.php";
 $auth = autenticado();
 
@@ -100,4 +101,7 @@ $resultado = $_GET['resultado'] ?? null;
 
 <?php
 include 'includes/footer.php';
+
+ob_end_flush();
+
 ?>

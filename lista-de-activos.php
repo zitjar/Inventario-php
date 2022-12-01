@@ -1,4 +1,5 @@
 <?php
+ob_start();
 require "includes/funciones.php";
 $auth = autenticado();
 
@@ -143,3 +144,6 @@ $('#eliminar').on('show.bs.modal', function(e) {
     $('.debug-url').html('Delete URL: <Strong>' + $(this).find('.btn-ok').attr('href') + '</strong>');
 });
 </script>
+<?php
+ob_end_flush();
+?>

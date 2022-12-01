@@ -1,6 +1,5 @@
 <?php
-
-
+require "includes/funciones.php";
 $auth = autenticado();
 
 if(!$auth){

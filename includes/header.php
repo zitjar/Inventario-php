@@ -1,5 +1,5 @@
 <?php
-require "includes/funciones.php";
+session_start();
 
 $rol = $_SESSION['rol'];
 ?>

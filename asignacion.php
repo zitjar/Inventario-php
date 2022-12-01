@@ -1,7 +1,7 @@
 <?php 
 
 include 'includes/header.php';
-include "/includes/config/database.php";
+include "includes/config/database.php";
 
 $db = conectarDb();
 

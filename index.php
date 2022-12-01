@@ -4,8 +4,6 @@ $auth = autenticado();
 if(!$auth){
     header("Location:login.php");
 }
-
-
 include 'includes/header.php';
 ?>
 

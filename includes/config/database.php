@@ -1,12 +1,4 @@
 <?php
-require "../funciones.php";
-$auth = autenticado();
-
-if(!$auth){
-    header("Location:login.php");
-}
-
-
 function conectarDb():mysqli{
     $db = new mysqli("containers-us-west-138.railway.app","root","qfiEeMFQjUUFdRlA2XXk","railway",6302);
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 require "includes/funciones.php";
 $auth = autenticado();
 

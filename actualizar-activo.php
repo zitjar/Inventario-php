@@ -3,7 +3,7 @@
 require 'includes/config/database.php';
 
 $db = conectarDb();
-require "includes/funciones.php";
+
 
 $rol = $_SESSION['rol'];
 

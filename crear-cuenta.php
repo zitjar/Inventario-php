@@ -1,7 +1,7 @@
 <?php
 
 include "includes/config/database.php";
-require "includes/funciones.php"; 
+ 
 zonaHoraria();
 
 $db = conectarDb();

@@ -1,7 +1,6 @@
 <?php
-session_start();
 require "includes/config/database.php";
-require "includes/funciones.php"
+require "includes/funciones.php";
 
 $rol = $_SESSION['rol'];
 

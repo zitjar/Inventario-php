@@ -1,9 +1,3 @@
-<?php
-session_start();
-
-$rol = $_SESSION['rol'];
-?>
-
 <!DOCTYPE html>
 <html lang="es-MX">
 
@@ -60,11 +54,11 @@ $rol = $_SESSION['rol'];
                             <li class="nav-item">
                                 <a class="nav-link active" href="lista-de-activos.php">Activos</a>
                             </li>
-                            <?php if($rol === "Administrador"){ ?>
+                           
                             <li class="nav-item">
                                 <a class="nav-link active" href="lista-de-usuarios.php">Lista de usuarios</a>
                             </li>
-                            <?php }?>
+                          
                             <li class="nav-item">
                                 <a class="nav-link active" href="lista-de-asignaciones.php">Lista de equipo asignados</a>
                             </li>

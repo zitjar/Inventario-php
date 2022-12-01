@@ -1,14 +1,20 @@
 <?php
 require "includes/funciones.php";
 $auth = autenticado();
+session_start();
+
+$rol = $_SESSION['rol'];
 
 if(!$auth){
     header("Location:login.php");
 }
-
+if($rol === "Usuario"){
+    header("Location:index.php");
+}
 include "includes/config/database.php";
 
-session_start();
+
+
 
 $db = conectarDb();
 

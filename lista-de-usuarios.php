@@ -10,9 +10,6 @@ if($rol === "Usuario"){
 }
 include "includes/config/database.php";
 
-
-
-
 $db = conectarDb();
 
 $sql = "SELECT * FROM usuarios";
@@ -21,10 +18,6 @@ $result = mysqli_query($db, $sql);
 
 $resultado = $_GET['resultado'] ?? null;
 //=========================================================
-$rol = $_SESSION['rol'];
-if($rol === "Usuario"){
-header("Location:/index.php");
-}
 include "includes/header.php";
 ?>
 

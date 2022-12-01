@@ -1,6 +1,6 @@
 <?php
 
-include "includes/config/database.php";
+include "/includes/config/database.php";
 
 session_start();
 
@@ -14,7 +14,7 @@ $resultado = $_GET['resultado'] ?? null;
 //=========================================================
 $rol = $_SESSION['rol'];
 if($rol === "Usuario"){
-header("Location:index.php");
+header("Location:/index.php");
 }
 include "includes/header.php";
 ?>

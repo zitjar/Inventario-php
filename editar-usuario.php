@@ -1,6 +1,6 @@
 <?php
 
-require 'includes/config/database.php';
+require '/includes/config/database.php';
 
 $db = conectarDb();
 
@@ -15,7 +15,7 @@ $sql = "UPDATE usuarios SET u_nombre = '$nombre', u_apellido = '$apellido', u_co
 $resultado = mysqli_query($db, $sql);
 
 if(!$resultado){
-    header("Location:mi-perfil.php?resultado=1");
+    header("Location:/mi-perfil.php?resultado=1");
 }else{
-    header("Location:mi-perfil.php?resultado=2");
+    header("Location:/mi-perfil.php?resultado=2");
 }

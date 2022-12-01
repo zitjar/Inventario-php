@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/config/database.php';
+include '/includes/config/database.php';
 
 $db = conectarDb();
 
@@ -17,7 +17,7 @@ $result2 = mysqli_query($db, $sql5);
 $result = mysqli_query($db,$sql);
 
 if(!$result){
-    header("Location:lista-de-asignaciones.php?resultado=2");
+    header("Location:/lista-de-asignaciones.php?resultado=2");
 }else{
-    header("Location:lista-de-asignaciones.php?resultado=4");
+    header("Location:/lista-de-asignaciones.php?resultado=4");
 }

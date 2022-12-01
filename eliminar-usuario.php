@@ -1,6 +1,6 @@
 <?php
 
-include 'includes/config/database.php';
+include '/includes/config/database.php';
 
 $db = conectarDb();
 
@@ -15,7 +15,7 @@ $resultado = mysqli_query($db, $sql);
 
 
 if(!$resultado){
-    header("Location:lista-de-usuarios.php?resultado=1");
+    header("Location:/lista-de-usuarios.php?resultado=1");
 }else{
-    header("Location:lista-de-usuarios.php?resultado=3");
+    header("Location:/lista-de-usuarios.php?resultado=3");
 }

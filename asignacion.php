@@ -1,7 +1,7 @@
 <?php 
 
 include 'includes/header.php';
-include "includes/config/database.php";
+include "/includes/config/database.php";
 
 $db = conectarDb();
 
@@ -23,9 +23,9 @@ $dato = mysqli_query($db, $sql3);
         $result3 = mysqli_query($db, $sql);
         
         if(!$result3){
-            header('Location:asignacion.php?resultado=2');
+            header('Location:/asignacion.php?resultado=2');
         }else{
-            header('Location:asignacion.php?resultado=1');
+            header('Location:/asignacion.php?resultado=1');
         }
         
 }

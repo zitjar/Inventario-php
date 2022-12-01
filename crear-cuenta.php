@@ -1,6 +1,6 @@
 <?php
 
-include "includes/config/database.php";
+include "/includes/config/database.php";
 require "includes/funciones.php"; 
 zonaHoraria();
 
@@ -38,9 +38,9 @@ if($_SERVER["REQUEST_METHOD"]==="POST"){
 		$result = mysqli_query($db, $sql);
 
 		if(!$result){
-			header("Location:crear-cuenta.php?resultado=2");
+			header("Location:/crear-cuenta.php?resultado=2");
 		}else{
-			header("Location:crear-cuenta.php?resultado=1");
+			header("Location:/crear-cuenta.php?resultado=1");
 		}
 	}
 }

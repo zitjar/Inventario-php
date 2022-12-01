@@ -1,11 +1,11 @@
 <?php
-include 'includes/config/database.php';
+include '/includes/config/database.php';
 // session_start();
 
 // $sesion = $_SESSION['usuario'];
 
 // if($sesion == null || $sesion = ""){
-//     header("location:../index.php");
+//     header("Location:/../index.php");
 //     die();
 // }
 
@@ -17,4 +17,4 @@ $sql = "DELETE FROM activos WHERE id='$id' ";
 
 $resultado = mysqli_query($db, $sql);
 
-header("location:lista-de-activos.php?resultado=4");
+header("Location:/lista-de-activos.php?resultado=4");

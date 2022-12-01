@@ -1,7 +1,9 @@
 <?php
 
 function conectarDb():mysqli{
-    $db = new mysqli("localhost","root","","sistema-inventario");
+    $db = new mysqli("containers-us-west-138.railway.app","root","qfiEeMFQjUUFdRlA2XXk","railway");
+
+    //mysql://root:qfiEeMFQjUUFdRlA2XXk@containers-us-west-138.railway.app:6302/railway
 
     if(!$db){
         echo "Error no se pudo conectar a mysql";

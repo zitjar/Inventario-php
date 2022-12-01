@@ -1,8 +1,6 @@
 <?php 
 require "includes/funciones.php";
 
-$rol = $_SESSION['rol'];
-
 $auth = autenticado();
 
 if(!$auth){

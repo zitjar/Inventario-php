@@ -1,6 +1,7 @@
 <?php
+require "includes/funciones.php";
 
-
+$rol = $_SESSION['rol'];
 ?>
 
 <!DOCTYPE html>

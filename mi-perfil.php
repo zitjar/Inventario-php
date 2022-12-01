@@ -1,12 +1,11 @@
 <?php
 
-require 'includes/config/database.php';
+include 'includes/config/database.php';
+$db = conectarDb();
 
 session_start();
 
 $id = $_SESSION['id'];
-
-$db = conectarDb();
 
 $sql = "SELECT * FROM usuarios WHERE u_id = '$id'";
 

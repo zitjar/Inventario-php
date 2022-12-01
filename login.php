@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
 					$_SESSION['id'] = $usuario['u_id'];
 					$_SESSION['rol'] = $usuario['u_rol'];
 					$_SESSION['login'] = true;
-					header("Location:/index.php");
+					header("Location:index.php");
 				}else{
 					$errores[] = "Correo y/o contraseña no válidos";
 				}

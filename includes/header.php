@@ -1,13 +1,13 @@
 <?php
-require "includes/config/database.php";
 require "includes/funciones.php";
+
 
 $rol = $_SESSION['rol'];
 
 $auth = autenticado();
 
 if(!$auth){
-    header("Location:../login.php");
+    header("Location:login.php");
 }
 
 

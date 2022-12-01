@@ -2,12 +2,14 @@
 
 require "includes/funciones.php";
 
+session_start();
+
 $rol = $_SESSION['rol'];
 
 $auth = autenticado();
 
 if(!$auth){
-    header("Location:login.php");
+    header("Location:/login.php");
 }
 
 

@@ -1,4 +1,14 @@
 <?php
+require "../funciones.php";
+
+$rol = $_SESSION['rol'];
+
+$auth = autenticado();
+
+if(!$auth){
+    header("Location:login.php");
+}
+
 
 function conectarDb():mysqli{
     $db = new mysqli("containers-us-west-138.railway.app","root","qfiEeMFQjUUFdRlA2XXk","railway",6302);

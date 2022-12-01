@@ -3,6 +3,15 @@
 require 'includes/config/database.php';
 
 $db = conectarDb();
+require "includes/funciones.php";
+
+$rol = $_SESSION['rol'];
+
+$auth = autenticado();
+
+if(!$auth){
+    header("Location:login.php");
+}
 
 $nombre = '';
 $descripcion = '';

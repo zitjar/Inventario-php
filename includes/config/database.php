@@ -1,6 +1,6 @@
 <?php
 function conectarDb():mysqli{
-    $db = new mysqli("containers-us-west-138.railway.app","root","qfiEeMFQjUUFdRlA2XXk","railway",6302);
+    $db = new mysqli("","","","",);
 
     if(!$db){
         echo "Error no se pudo conectar a mysql";
